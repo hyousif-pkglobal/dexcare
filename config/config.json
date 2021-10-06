@@ -1,0 +1,28 @@
+    {
+      "configmapVersion": "1.0.4",
+      "DB_DIALECT": "postgresql",
+      "DB_FORCE_SYNC": false,
+      "DB_HOST_READER": "consolidated-dexcare-postgresql-reader.prod.kensington.dexcare.engineering",
+      "DB_HOST_WRITER": "consolidated-dexcare-postgresql.prod.kensington.dexcare.engineering",
+      "DB_LOGGING": false,
+      "DB_NAME": "eddaservice",
+      "DB_POOL_ACQUIRE": 60000,
+      "DB_POOL_IDLE": 30000,
+      "DB_POOL_MAX": 5,
+      "DB_PORT_READER": 5432,
+      "DB_PORT_WRITER": 5432,
+      "DB_SCHEMA": "eddaservice",
+      "dbHostReader": "consolidated-dexcare-postgresql-reader.prod.kensington.dexcare.engineering",
+      "dbHostWriter": "consolidated-dexcare-postgresql.prod.kensington.dexcare.engineering",
+      "dbName": "eddaservice",
+      "dbUserReader": "edda_reader",
+      "dbUserWriter": "edda_writer",
+      "emailSqsUrl": "https://sqs.us-west-2.amazonaws.com/470260071759/edda-encrypted-email-prod.fifo",
+      "pusherSqsQueueUrl": "https://sqs.us-west-2.amazonaws.com/470260071759/edda-encrypted-pusher-prod.fifo",
+      "secretsKey": "eddaservice-secrets-prod",
+      "smsSqsQueueUrl": "https://sqs.us-west-2.amazonaws.com/470260071759/edda-encrypted-sms-prod.fifo",
+      "snsResponseUrl": "https://sqs.us-west-2.amazonaws.com/470260071759/edda-ses-response-prod",
+      "snsSqsQueueUrl": "https://sqs.us-west-2.amazonaws.com/470260071759/edda-encrypted-sns-prod.fifo",
+      "callSqsQueueUrl": "https://sqs.us-west-2.amazonaws.com/470260071759/edda-encrypted-call-prod.fifo"
+    }
+
