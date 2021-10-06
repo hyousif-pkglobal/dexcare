@@ -1,5 +1,5 @@
     {
-      "configmapVersion": "1.0.4",
+      "configmapVersion": "1.0.3",
       "DB_DIALECT": "postgresql",
       "DB_FORCE_SYNC": false,
       "DB_HOST_READER": "consolidated-dexcare-postgresql-reader.prod.kensington.dexcare.engineering",
