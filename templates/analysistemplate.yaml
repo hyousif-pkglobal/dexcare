@@ -10,5 +10,5 @@ spec:
     successCondition: "result.ok && result.successPercent >= 0.90"
     provider:
       web:
-         url: "http://34.71.35.14:8080"
+         url: "http://3.99.44.184:31700"
          jsonPath: "{$.data}"
