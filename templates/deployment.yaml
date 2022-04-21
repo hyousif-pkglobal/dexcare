@@ -1,27 +1,9 @@
-apiVersion: argoproj.io/v1alpha1
-kind: Rollout
+apiVersion: app/v1
+kind: Deployment
 metadata:
   name: {{ include "dexcare.fullname" . }}
 spec:
   replicas: {{ .Values.replicaCount }}
-  strategy:
-    canary:
-      analysis:
-        templates:
-        - templateName: success-rate
-        startingStep: 1
-        args:
-        - name: service-name
-          value: {{ include "dexcare.fullname" . }}.demo.svc.cluster.local
-      steps:
-      - setWeight: 20
-      - pause: {duration: 10}
-      - setWeight: 40
-      - pause: {duration: 10}
-      - setWeight: 60
-      - pause: {duration: 10}
-      - setWeight: 80
-      - pause: {duration: 10}
   selector:
     matchLabels:
        {{- include "dexcare.selectorLabels" . | nindent 6 }}
